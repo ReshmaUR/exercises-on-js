@@ -1,3 +1,8 @@
+.head{
+    color: darkblue;
+    font-size: 90px;
+    padding-left: 100px;
+}
 .button{
     width: 200px;
     height: 40px;
@@ -5,7 +10,7 @@
     background-color: chartreuse;
     color: black;
     font-size: 20px;
-    margin-left: 200px;
+    margin-left: 210px;
     font-weight: bold;
 }
 #first:hover{
@@ -49,7 +54,7 @@
     color: white;
 }
 .label1{
-    padding-left: 50px;
+    padding-left: 80px;
     padding-top: 30px;
 }
 #pat{
@@ -57,18 +62,51 @@
     font-size: 40px;
 }
 #disp{
-    padding-left: 100px; 
+    padding-left: 200px; 
 }
-/* ques1 */
-#array{
-    margin-left: 40px; 
-    padding-right: 10px;
-}
-#cmt{
-    padding-left: 100px; 
-}
+
 .q{
     font-size: 20px;
     font-weight: bold;
+    margin-left: 70px;
+}
+/* all button arrangemets */
+#fifth{
+    margin-top: 110px;
+}
+#sixth{
+    margin-top: 20px;
+}
+#seventh{
+    margin-top: 50px;
+}
+#eighth{
+    margin-top: 85px;
+}
+#ninth{
+    margin-top: 20px;
+}
+#tenth{
+    margin-top: 142px;
+}
+/* input field arrangements */
+.field{
     margin-left: 80px;
+}
+#limi{
+    margin-left: 90px;
+}
+#inum2{
+    margin-left: 55px;
+}
+/* for output p tags */
+.array{
+    margin-left: 80px; 
+    font-weight: bold;
+}
+.cmt{
+    padding-left: 80px; 
+    font-weight: bold;
+    color: darkblue;
+    font-size: 20px;
 }

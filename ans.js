@@ -6,20 +6,25 @@ function primeorNot(){
         number[i] = prompt("Enter element"+(i+1));
     }
     var x = number[0];
-    document.getElementById("array").value = number;
-    if(x===1){
-        document.getElementById("cmt").innerHTML = "The first element is not a prime number";
+    document.getElementById("array").innerHTML ="The entered elements are : " +number;
+    if(x==1){
+        document.getElementById("cmt").innerHTML = "The first element is neither prime nor composite";
         return false;
        
     }
-    else if(x===2){ 
+    else if(x==0){ 
+        document.getElementById("cmt").innerHTML = "The first element is neither prime nor composite";
+        return false;
+        
+    }
+    else if(x==2){ 
         document.getElementById("cmt").innerHTML = "The first element is a prime number";
         return true;
         
     }
     else{
         for(var i=2;i<x;i++){
-            if(x%i ===0){
+            if(x%i ==0){
                 document.getElementById("cmt").innerHTML = "The first element is not a prime number";
                 return false;
                 
@@ -39,7 +44,7 @@ var size = document.getElementById("size").value;
 for(var i =0;i<size;i++){
     array[i] = prompt("Enter element"+(i+1));
 }
-document.getElementById("freq").value = array;
+document.getElementById("freq").innerHTML = "The entered elements are : "+array;
 for (var i=0; i<array.length; i++){
     for (var j=i; j<array.length; j++){
                 if (array[i] == array[j])
@@ -52,8 +57,9 @@ for (var i=0; i<array.length; i++){
         }
         m=0;
 }
-console.log(item+" ( " +mf +" times ) ") ;
-document.getElementById("item").value = item;
+// console.log(item+" ( " +mf +" times ) ") ;
+var out = item+" ( " +mf +" times ) ";
+document.getElementById("item").innerHTML = "Most frequent item is :  "+out;
 }
 //Question3
 function swap(){
@@ -74,7 +80,7 @@ function swap(){
         }
     }
     console.log(result.join(''));
-    document.getElementById("swap").value = result.join('');
+    document.getElementById("swap").innerHTML = "Swaped string is : "+result.join('');
 }
 //Question4
 function square(){
@@ -83,13 +89,13 @@ function square(){
     for(var i =0;i<size;i++){
     array[i] = prompt("Enter element"+(i+1));
     }
-    document.getElementById("snoo").value = array;
+    document.getElementById("snoo").innerHTML ="The entered elements are :  "+ array;
     var sum = 0; 
     i = array.length;
     while (i--) 
     sum += Math.pow(array[i], 2);
     console.log(sum); 
-    document.getElementById("square").value = sum;
+    document.getElementById("square").innerHTML = "Sum of squares is :  "+sum;
 }
 //Question5
 function oddorEven(){
@@ -111,21 +117,17 @@ function trunc(){
     var str1;
     str1 =str.slice(0, limit);
     console.log(str1);
-    document.getElementById("tru").value = str1;
+    document.getElementById("tru").innerHTML = "Truncated string is : "+str1;
 }
-    
-    
-
-
 //Question7
 function findLarge(){
     var num1 = parseInt(document.getElementById("inum1").value);
     var num2 = parseInt(document.getElementById("inum2").value);   
     if(num1>num2){
-        document.getElementById("answer7").value = num1;       
+        document.getElementById("answer7").innerHTML = "The largest integer is : "+num1;       
     }
     else{
-        document.getElementById("answer7").value = num2;
+        document.getElementById("answer7").innerHTML = "The largest integer is : "+num2;
     }
 }
 //Question8
@@ -136,16 +138,16 @@ function alpha() {
     for(var i =0;i<size;i++){
         person[i] = prompt("Enter element"+(i+1));
     }
-    document.getElementById("old").value = person;
+    document.getElementById("old").innerHTML = "The entered array is :  "+person;
     for (x in person) {
     person.sort();
     }
-    document.getElementById("new").value = person;
+    document.getElementById("new").innerHTML = "The arranged array is :  "+person;
   }
   
 //Question9
 function printLtr(){
-var txt = "JavaScript";
+var txt = "Javascript";
 var x;
 var out ="";
 var final ="";
