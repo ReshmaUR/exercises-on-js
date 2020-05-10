@@ -126,6 +126,9 @@ function findLarge(){
     if(num1>num2){
         document.getElementById("answer7").innerHTML = "The largest integer is : "+num1;       
     }
+    else if(num1==num2){
+        document.getElementById("answer7").innerHTML = "Both are equal numbers";
+    }
     else{
         document.getElementById("answer7").innerHTML = "The largest integer is : "+num2;
     }
