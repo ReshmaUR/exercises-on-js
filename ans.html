@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answers</title>
+    <link rel="stylesheet" href="ans.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body id="body">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- for the question1 -->
+            <p class="q">1. Write a javascript function to get an array and to read the first elements of an array. Check whether it is prime or not.</p>
+            <label for="" class="label1">Enter the no:of elements</label><input type="text" id="pri">
+            <button id="first" class="button" onclick="return primeorNot();">Answer</button><br>
+            <label for="" class="label1">Entered elements are...</label><input type="text" id="array">
+            <p id="cmt"></p><br>
+        </div>
+        <div class="col-md-6">
+            <!-- for the question2 -->
+            <p class="q">2. Write a javascript program to find the most frequent item of an array.</p>
+            <label for="" class="label1">Enter the no:of elements</label><input type="text" id="size">
+            <button id="second" class="button" onclick="frequentItem();">Answer</button><br>
+            <label for="" class="label1">Entered elements are...</label><input type="text" id="freq">
+            <label for="" class="label1">Most frequent item</label><input type="text" id="item">
+            <br><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- for the question3 -->
+            <p class="q">3. Write a Javascript program which accept a string as input and swap the case of each character</p>
+            <label for="" class="label1">Input the string</label><input type="text" id="input" required><br>
+            <button id="third" class="button" onclick="swap();">Answer</button><br>
+           
+            <label for="" class="label1">Swaped string</label><input type="text" id="swap">
+    <br><br>
+        </div>
+        <div class="col-md-6">
+            <!-- for the question4 -->
+            <p class="q">4. Write a javascript program to find the sum of squares of the elements of an array</p>
+            <label for="" class="label1">Enter the no:of elements</label><input type="number" id="sno">
+            <button id="fourth" class="button" onclick="square();">Answer</button><br>
+            <label for="" class="label1">Entered elements are...</label><input type="text" id="snoo">
+            <label for="" class="label1">Sum of squares</label><input type="text" id="square">
+            <br><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <!-- for the question5 -->
+            <p class="q">5. Write a Javascript program for loop that will iterate from 0 to 15. For each iteration, check if the 
+                current number is odd or even and display the message to the screen as odd or even
+            </p>
+            <button id="fifth" class="button" onclick="oddorEven();">Answer</button><br>
+            <p id="disp"></p>
+    <br><br>
+        </div>
+        <div class="col-md-6">
+             <!-- for the question6 -->
+             <p class="q">6. Write a Javascript function to truncate a string if it is longer than the specified no:of characters.</p>
+             <label for="">Enter the String</label><input type="text" id="stri">
+             <label for="">Enter the limit</label><input type="text" id="limi">
+             <button id="sixth" class="button" onclick="trunc();">Answer</button><br>
+            <label for="">Truncated string</label><input type="text" id="tru">
+            <br><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+             <!-- for the question7 -->
+             <p class="q">7. Write a Javascript program that accept two integers and display the larger using findLarge() function.</p>
+             <label for="" class="label1">Enter the first integer</label><input type="number" id="inum1" required><br>
+             <label for="" class="label1">Enter the second integer</label><input type="number" id="inum2" required><br>
+             <button id="seventh" class="button" onclick="findLarge();">Answer</button><br>
+             <label for="" class="label1">The largest integer </label><input type="number" id="answer7">
+             <br><br>
+        </div>
+        <div class="col-md-6">
+            <!-- for the question8 -->
+            <p class="q">8. Write a Javascript program using for...in to read the objects from an array entered by a user and to arrange it in alphabetical order.</p>
+            <label for="" class="label1">Enter the no:of elements</label><input type="text" id="alpha">
+            <button id="eighth" class="button" onclick="alpha();">Answer</button><br>
+            <label for="" class="label1">Older array</label><input type="" id="old"><br>
+            <label for="" class="label1">Arranged array</label><input type="" id="new">
+            <br><br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <!-- for the question9 -->
+            <p class="q">9. Write a Javascript program to print the letters of the word "Javascript" as below in each line using for..of<br><br>J<br>Ja<br>Jav<br>Java<br>.<br>.<br>.<br>Javascript</p>
+            <button id="ninth" class="button" onclick="printLtr();">Answer</button><br>
+            <p id="toge"></p>
+            <br><br>
+        </div>
+        <div class="col-md-6">
+            <!-- for the question10 -->
+            <p class="q">10. Write a Javascript program to construct the following pattern, using nested for loop.<br><br>*<br>**<br>***<br>****<br></p>
+            <button id="tenth" class="button" onclick="pattern();">Answer</button><br>
+            <p id="pat"></p>
+        </div>
+    </div>    
+    <script src="ans.js"></script>
+</body>
+</html>
